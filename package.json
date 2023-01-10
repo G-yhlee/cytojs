@@ -1,0 +1,33 @@
+{
+  "name": "cytojs",
+  "version": "0.0.2",
+  "description": "",
+  "main": "package/index.js",
+  "types": "package/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "open docs/index.html",
+    "docs": "npx typedoc",
+    "docs:open": "npx typedoc && npm run open",
+    "version:patch": "npm version --no-git-tag-version patch ",
+    "deploy": "npm run version:patch && npm publish"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "eslint": "^8.26.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "typedoc": "^0.23.24",
+    "typescript": "^4.8.4"
+  }
+}
